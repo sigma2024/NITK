@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Low-Pass Filter Simulator</title>
+  
+  <link rel="stylesheet" type="text/css" href="/css/style.css"> 
+</head>
+<body>
+  <h1 class="heading">LOW PASS FILTER</h1>
+<br><br>
+  <div id="container">
+    <div id="input-section">
+      <h2>Input Parameters</h2>
+      <div class="input-group">
+        <span class="label">Cutoff Frequency:</span>
+        <input type="range" id="cutoff-frequency" min="0" max="100" value="10" class="slider"  />
+        <span id="cutoff-value">10 Hz</span>
+      </div>
+      <div class="input-group">
+        <span class="label">Input Frequency:</span>
+        <input type="range" id="input-frequency" min="0" max="100" value="20" class="slider" />
+        <span id="input-frequency-value">20 Hz</span>
+      </div>
+      <div class="input-group">
+        <span class="label ">Input Amplitude:</span>
+        <input type="range" id="input-amplitude" min="0" max="100" step="1" value="50" class="slider" />
+        <span id="input-amplitude-value">0.5</span>
+      </div>
+      <button class="button" onclick="simulateFilter()">Simulate</button>
+    </div>
+   
+    <div id="drag-drop-section" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Drag and Drop Components</h2>
+      <div id="div1"></div>
+      <img id="drag1" class="draggable-image" src="/pictures/drag.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+      <img id="drag2" class="draggable-image" src="/pictures/drag1.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+      <img id="drag3" class="draggable-image" src="/pictures/drag2.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+    </div>
+  </div>
+
+  <div id="chart-container">
+    <!-- <canvas id="output-chart"></canvas>  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
+    <script src="js/lowpass.js"></script>
+    <script src="js/dragdrop.js"></script>
+    <div id="chart"></div>
+    
+  </div>
+ 
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  #container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    
+  }
+  
+  #input-section {
+    width: 300px;
+    padding: 38px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgb(0, 0, 0);
+  }
+  
+  #drag-drop-section {
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgb(0, 0, 0);
+  }
+  
+  #div1 {
+    width: 100%;
+    height: 140px;
+    border: 1px dashed #aaaaaa;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .draggable-image {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .button { 
+    display: block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  #chart-container {
+    width: 780px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+   */
+  .label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .slider {
+    width: 100%;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  #cutoff-value,
+  #input-frequency-value,
+  #input-amplitude-value {
+    font-weight: bold;
+    margin-left: 10px;
+  }
